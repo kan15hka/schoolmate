@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:schoolmate/common/widgets/app_bar/performance_tab_bar.dart';
-import 'package:schoolmate/common/widgets/app_bar/tab_bar.dart';
 import 'package:schoolmate/common/widgets/texts/section_heading.dart';
 import 'package:schoolmate/features/pages/controller/subjects_controller.dart';
 import 'package:schoolmate/features/pages/screens/subjects/widgets/performance/performance.dart';
 import 'package:schoolmate/utils/constants/colors.dart';
 import 'package:schoolmate/utils/constants/sizes.dart';
-import 'package:schoolmate/utils/constants/text_strings.dart';
 import 'package:schoolmate/utils/device/device_utility.dart';
 
 class SSubjectPerformance extends StatelessWidget {

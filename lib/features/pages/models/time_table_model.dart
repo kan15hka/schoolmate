@@ -6,7 +6,7 @@ class TimeTablModel {
     required this.periodsList,
   });
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['day'] = day;
     List<Map<String, dynamic>> jsonEventsList = [];
     for (PeriodModel element in periodsList) {
@@ -36,7 +36,7 @@ class PeriodModel {
       required this.subjectCount});
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['periodType'] = periodType;
     data['startTime'] = startTime;
     data['endTime'] = endTime;

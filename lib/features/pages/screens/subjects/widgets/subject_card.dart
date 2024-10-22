@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:schoolmate/common/widgets/buttons/combo_buttons.dart';
 
 class SSubjectCard extends StatelessWidget {
@@ -20,7 +19,7 @@ class SSubjectCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 7.5),
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.0),
           gradient: LinearGradient(
@@ -38,7 +37,7 @@ class SSubjectCard extends StatelessWidget {
                 .textTheme
                 .bodySmall!
                 .apply(color: Colors.black)),
-        Spacer(),
+        const Spacer(),
         SComboButtons(
             onButtonLeftTapped: onSyllabusTapped,
             onButtonRightTapped: onPerformanceTapped)

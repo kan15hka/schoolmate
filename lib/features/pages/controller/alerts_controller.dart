@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 import 'package:schoolmate/common/widgets/loaders/loaders.dart';
 import 'package:schoolmate/data/repositories/alerts_repository.dart';
-import 'package:schoolmate/data/repositories/circular_repository.dart';
 import 'package:schoolmate/features/student/model/message_notif_model.dart';
 
 class AlertsController extends GetxController {

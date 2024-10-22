@@ -1,8 +1,5 @@
 import 'package:get/get.dart';
-import 'package:schoolmate/common/widgets/loaders/loaders.dart';
-import 'package:schoolmate/data/repositories/student_repository.dart';
 import 'package:schoolmate/data/repositories/teacher_repository.dart';
-import 'package:schoolmate/features/student/model/student_model.dart';
 import 'package:schoolmate/features/student/model/teacher_model.dart';
 
 class TeacherController extends GetxController {
@@ -28,7 +25,7 @@ class TeacherController extends GetxController {
 
       isLoading.value = false;
     } catch (e) {
-      print(e);
+      isLoading.value = false;
     }
   }
 }

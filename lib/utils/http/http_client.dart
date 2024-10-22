@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 
 class SHttpHelper {
   static const String _baseUrl =
-      'http://192.168.46.115:3000/admin'; // Replace with your API base URL
+      'http://192.168.137.1:3000/admin'; // Replace with your API base URL
 
   // Helper method to make a GET request
   static Future<Map<String, dynamic>> get(String endpoint) async {

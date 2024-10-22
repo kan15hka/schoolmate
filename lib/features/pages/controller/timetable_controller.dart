@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:schoolmate/common/widgets/loaders/loaders.dart';
-import 'package:schoolmate/data/repositories/circular_repository.dart';
-import 'package:schoolmate/features/student/model/message_notif_model.dart';
 
 class TimeTableController extends GetxController
     with GetSingleTickerProviderStateMixin {
@@ -11,12 +8,12 @@ class TimeTableController extends GetxController
   //Variables
   late TabController tabController;
   final List<Tab> tabs = <Tab>[
-    Tab(text: "MON"),
-    Tab(text: "TUE"),
-    Tab(text: "WED"),
-    Tab(text: "THU"),
-    Tab(text: "FRI"),
-    Tab(text: "SAT"),
+    const Tab(text: "MON"),
+    const Tab(text: "TUE"),
+    const Tab(text: "WED"),
+    const Tab(text: "THU"),
+    const Tab(text: "FRI"),
+    const Tab(text: "SAT"),
   ];
 
   @override

@@ -1,6 +1,5 @@
 import 'package:get/get.dart';
 import 'package:schoolmate/features/pages/models/exams_model.dart';
-import 'package:schoolmate/features/student/model/message_notif_model.dart';
 
 const String _syllabus =
     "Calculus: Limits, derivatives, and integrals\nAlgebra: Polynomial equations, matrices, and determinants.\nGeometry: Analytical geometry, vectors, and three-dimensional geometry.\nProbability and Statistics: Probability distributions, hypothesis testing, and data analysis.\nTrigonometry: Trigonometric functions, identities, and applications in solving triangles.";
@@ -12,35 +11,35 @@ List<ExamModel> examList = [
     examsList: [
       ExamSubjectsModel(
         subjectName: "Mathematics",
-        examDateTime: DateTime.now().add(Duration(days: 10)),
+        examDateTime: DateTime.now().add(const Duration(days: 10)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Science",
-        examDateTime: DateTime.now().add(Duration(days: 11)),
+        examDateTime: DateTime.now().add(const Duration(days: 11)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "English",
-        examDateTime: DateTime.now().add(Duration(days: 12)),
+        examDateTime: DateTime.now().add(const Duration(days: 12)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Tamil",
-        examDateTime: DateTime.now().add(Duration(days: 13)),
+        examDateTime: DateTime.now().add(const Duration(days: 13)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Social Science",
-        examDateTime: DateTime.now().add(Duration(days: 14)),
+        examDateTime: DateTime.now().add(const Duration(days: 14)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
@@ -52,35 +51,35 @@ List<ExamModel> examList = [
     examsList: [
       ExamSubjectsModel(
         subjectName: "Mathematics",
-        examDateTime: DateTime.now().subtract(Duration(days: 12)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 12)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Science",
-        examDateTime: DateTime.now().subtract(Duration(days: 11)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 11)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "English",
-        examDateTime: DateTime.now().subtract(Duration(days: 10)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 10)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Tamil",
-        examDateTime: DateTime.now().subtract(Duration(days: 9)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 9)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Social Science",
-        examDateTime: DateTime.now().subtract(Duration(days: 8)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 8)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
@@ -92,35 +91,35 @@ List<ExamModel> examList = [
     examsList: [
       ExamSubjectsModel(
         subjectName: "Mathematics",
-        examDateTime: DateTime.now().subtract(Duration(days: 27)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 27)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Science",
-        examDateTime: DateTime.now().subtract(Duration(days: 26)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 26)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "English",
-        examDateTime: DateTime.now().subtract(Duration(days: 25)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 25)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Tamil",
-        examDateTime: DateTime.now().subtract(Duration(days: 24)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 24)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Social Science",
-        examDateTime: DateTime.now().subtract(Duration(days: 23)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 23)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
@@ -132,14 +131,14 @@ List<ExamModel> examList = [
     examsList: [
       ExamSubjectsModel(
         subjectName: "Mathematics",
-        examDateTime: DateTime.now().subtract(Duration(days: 2)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 2)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Science",
-        examDateTime: DateTime.now().subtract(Duration(days: 1)),
+        examDateTime: DateTime.now().subtract(const Duration(days: 1)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
@@ -153,14 +152,14 @@ List<ExamModel> examList = [
       ),
       ExamSubjectsModel(
         subjectName: "Tamil",
-        examDateTime: DateTime.now().add(Duration(days: 1)),
+        examDateTime: DateTime.now().add(const Duration(days: 1)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",
       ),
       ExamSubjectsModel(
         subjectName: "Social Science",
-        examDateTime: DateTime.now().add(Duration(days: 2)),
+        examDateTime: DateTime.now().add(const Duration(days: 2)),
         syllabus: _syllabus,
         subjectCode: "SA4589",
         subjectTeacher: "Tyler Durden",

@@ -18,7 +18,7 @@ class HomeWorkCard extends StatelessWidget {
     final primaryColor = SColors.listColors[colorIndex]["primary"];
 
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
+      margin: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
       decoration: BoxDecoration(
           color: secondaryColor, borderRadius: BorderRadius.circular(10.0)),
       child: Column(
@@ -47,7 +47,7 @@ class HomeWorkCard extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodyLarge,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10.0,
                 ),
                 Row(
@@ -78,7 +78,7 @@ class HomeWorkCard extends StatelessWidget {
               children: [
                 Text("Description",
                     style: Theme.of(context).textTheme.bodyLarge),
-                Text(
+                const Text(
                   "Write all the trignometric formulas in classwork",
                 )
               ],
@@ -105,10 +105,8 @@ Widget taskInfoCard(
       Row(
         children: [
           Row(children: [
-            Container(
-              child: Icon(iconData),
-            ),
-            SizedBox(width: 5.0),
+            Icon(iconData),
+            const SizedBox(width: 5.0),
             Text(
               value,
               style: Theme.of(context)

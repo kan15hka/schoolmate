@@ -26,9 +26,9 @@ class SubjectPeriodCard extends StatelessWidget {
           Container(
             height: 25.0,
             width: 25.0,
-            margin: EdgeInsets.only(right: 10.0),
+            margin: const EdgeInsets.only(right: 10.0),
             decoration:
-                BoxDecoration(color: SColors.lightGrey, shape: BoxShape.circle),
+                const BoxDecoration(color: SColors.lightGrey, shape: BoxShape.circle),
             child: Center(
               child: Text(
                 subjectCount.toString(),

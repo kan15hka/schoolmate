@@ -34,10 +34,16 @@ class SHomeAppBarCard extends StatelessWidget {
                     radius: 60.0,
                   );
                 } else {
-                  return SCircularImage(
-                      image: (studentController.student.value.image == "")
-                          ? SImages.user
-                          : studentController.student.value.image);
+                  return Container(
+                    padding: const EdgeInsets.all(2.5),
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: SColors.white.withOpacity(0.5)),
+                    child: SCircularImage(
+                        image: (studentController.student.value.image == "")
+                            ? SImages.user
+                            : studentController.student.value.image),
+                  );
                 }
               },
             ),
@@ -69,7 +75,7 @@ class SHomeAppBarCard extends StatelessWidget {
                           "Welcome",
                           style: Theme.of(context)
                               .textTheme
-                              .labelMedium!
+                              .bodySmall!
                               .apply(color: SColors.white),
                         ),
                         Text(
@@ -77,7 +83,7 @@ class SHomeAppBarCard extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           style: Theme.of(context)
                               .textTheme
-                              .titleMedium!
+                              .bodyLarge!
                               .apply(color: SColors.white),
                         ),
                       ],

@@ -30,12 +30,12 @@ class SPerfrmanceTabBar extends StatelessWidget {
                   color: SColors.primaryLight,
                   borderRadius: BorderRadius.circular(10.0)),
               labelPadding: EdgeInsets.zero,
-              labelStyle: TextStyle(
+              labelStyle: const TextStyle(
                   fontSize: 18.0,
                   color: Colors.white,
                   fontFamily: STexts.fontFamily,
                   fontWeight: FontWeight.bold),
-              unselectedLabelStyle: TextStyle(
+              unselectedLabelStyle: const TextStyle(
                 fontSize: 15.0,
                 color: SColors.primary,
                 fontFamily: STexts.fontFamily,

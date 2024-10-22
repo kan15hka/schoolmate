@@ -73,7 +73,7 @@ class MessageNotifCard extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10.0),
                       border: Border.all(color: Colors.black, width: 1.5))
                   : null,
-              margin: EdgeInsets.only(bottom: 10.0),
+              margin: const EdgeInsets.only(bottom: 10.0),
               width: (isAlerts)
                   ? SDeviceUtils.getScreenWidth(context) * 0.9
                   : SDeviceUtils.getScreenWidth(context) - 70.0,

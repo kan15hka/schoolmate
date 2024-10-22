@@ -24,46 +24,69 @@ class PageItemCard extends StatelessWidget {
     final color = SColors.listColors[colorIndex]["secondary"];
     return GestureDetector(
       onTap: onTap,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Positioned(
-            left: 20.0,
-            top: 20.0,
-            child: KCircularContainer(
-              height: 20.0,
-              width: 20.0,
-              backgroundColor: color,
-            ),
-          ),
-          Container(
-            width: 80.0,
-            //color: Colors.amber,
-            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(5.0)),
-                    padding: const EdgeInsets.all(10.0),
-                    child: Image.asset(
-                      iconUrl,
-                      color: const Color.fromARGB(255, 68, 68, 68),
-                      height: 35.0,
-                      width: 35.0,
-                    )),
-                Text(
-                  title,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style:
-                      const TextStyle(fontSize: 11.0, color: SColors.darkGrey),
+      child: Container(
+        margin: const EdgeInsets.all(7.5),
+        decoration: BoxDecoration(
+          color: color!.withOpacity(0.5),
+          borderRadius: BorderRadius.circular(7.5),
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(7.5),
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Positioned(
+                right: -10.0,
+                top: -10.0,
+                child: KCircularContainer(
+                  height: 50.0,
+                  width: 50.0,
+                  backgroundColor: color,
                 ),
-              ],
-            ),
+              ),
+              Positioned(
+                left: -10.0,
+                bottom: -10.0,
+                child: KCircularContainer(
+                  height: 50.0,
+                  width: 50.0,
+                  backgroundColor: color,
+                ),
+              ),
+              Container(
+                width: 100.0,
+                // /color: Colors.amber,
+
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 5, vertical: 10.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5.0)),
+                        padding: const EdgeInsets.all(10.0),
+                        child: Image.asset(
+                          iconUrl,
+                          // /color: const Color.fromARGB(255, 68, 68, 68),
+                          height: 45.0,
+                          width: 45.0,
+                        )),
+                    Text(
+                      title,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodySmall!
+                          .apply(color: Colors.black, fontSizeFactor: 0.85),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }

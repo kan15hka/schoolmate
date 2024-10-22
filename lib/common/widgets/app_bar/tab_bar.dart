@@ -16,19 +16,19 @@ class STabBar extends StatelessWidget {
     return Stack(
       alignment: Alignment.bottomCenter,
       children: [
-        Container(
+        SizedBox(
           height: 50.0,
           width: SDeviceUtils.getScreenWidth(context) * 0.95,
           child: TabBar(
             physics: const BouncingScrollPhysics(),
             unselectedLabelColor: Colors.white.withAlpha(150),
             labelPadding: EdgeInsets.zero,
-            labelStyle: TextStyle(
+            labelStyle: const TextStyle(
                 fontSize: 22.0,
                 color: Colors.white,
                 fontFamily: STexts.fontFamily,
                 fontWeight: FontWeight.bold),
-            unselectedLabelStyle: TextStyle(
+            unselectedLabelStyle: const TextStyle(
                 fontSize: 15.0,
                 color: SColors.primary,
                 fontFamily: STexts.fontFamily),

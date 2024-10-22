@@ -40,7 +40,7 @@ class SHeaderContent extends StatelessWidget {
             Column(
               children: [
                 const SizedBox(
-                  height: SSizes.spaceBtwSections * 1.25,
+                  height: SSizes.spaceBtwSections * 1.5,
                 ),
                 //Profile,Name and Appbar buttons
                 const Padding(

@@ -21,8 +21,8 @@ class ExamTimeTableBuilder extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(SSizes.h10),
+              const Padding(
+                padding: EdgeInsets.all(SSizes.h10),
                 child: SSectionHeading(
                   title: "Exam TimeTable",
                   isHeadline: true,

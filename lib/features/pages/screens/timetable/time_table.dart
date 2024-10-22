@@ -6,7 +6,6 @@ import 'package:schoolmate/features/pages/controller/timetable_controller.dart';
 import 'package:schoolmate/features/pages/models/time_table_model.dart';
 import 'package:schoolmate/features/pages/screens/timetable/tt_builder.dart';
 import 'package:schoolmate/utils/constants/colors.dart';
-import 'package:schoolmate/utils/constants/text_strings.dart';
 import 'package:schoolmate/utils/device/device_utility.dart';
 
 class TimeTablePage extends StatelessWidget {

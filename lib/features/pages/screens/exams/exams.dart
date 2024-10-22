@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:schoolmate/common/styles/calender/calender_styles.dart';
 import 'package:schoolmate/common/widgets/shimmers/calender_screen_shimmer.dart';
 import 'package:schoolmate/common/widgets/texts/section_heading.dart';
-import 'package:schoolmate/features/pages/controller/attendance_controller.dart';
 import 'package:schoolmate/features/pages/controller/exams_controller.dart';
-import 'package:schoolmate/features/pages/models/attendance_model.dart';
-import 'package:schoolmate/features/pages/screens/attendance/pie_information.dart';
 import 'package:schoolmate/features/pages/screens/exams/widgets/exam_tile.dart';
 import 'package:schoolmate/features/pages/screens/exams/widgets/exam_tt_builder.dart';
-import 'package:schoolmate/utils/constants/colors.dart';
 import 'package:schoolmate/utils/constants/sizes.dart';
-import 'package:table_calendar/table_calendar.dart';
 
 class ExamsPage extends StatelessWidget {
   const ExamsPage({super.key});
@@ -26,8 +20,8 @@ class ExamsPage extends StatelessWidget {
           child: SingleChildScrollView(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(SSizes.h10),
+            const Padding(
+              padding: EdgeInsets.all(SSizes.h10),
               child: SSectionHeading(
                 title: "Exams",
                 isHeadline: true,
@@ -41,8 +35,8 @@ class ExamsPage extends StatelessWidget {
                 final examList = controller.examsJsonList;
                 return ListView.builder(
                     shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
-                    padding: EdgeInsets.only(bottom: 50.0),
+                    physics: const NeverScrollableScrollPhysics(),
+                    padding: const EdgeInsets.only(bottom: 50.0),
                     itemCount: examList.length,
                     itemBuilder: (context, index) {
                       String examTitle =

@@ -1,16 +1,14 @@
 import 'package:schoolmate/features/pages/models/attendance_model.dart';
 
 import 'package:get/get.dart';
-import 'package:schoolmate/features/student/model/calender_events_model.dart';
-import 'package:schoolmate/utils/http/http_client.dart';
 
 List<AttendanceModel> attendanceList = [
   AttendanceModel(
-    date: DateTime.now().subtract(Duration(days: 2)),
+    date: DateTime.now().subtract(const Duration(days: 2)),
     isPresent: false,
   ),
   AttendanceModel(
-    date: DateTime.now().subtract(Duration(days: 1)),
+    date: DateTime.now().subtract(const Duration(days: 1)),
     isPresent: true,
   ),
   AttendanceModel(
@@ -18,11 +16,11 @@ List<AttendanceModel> attendanceList = [
     isPresent: false,
   ),
   AttendanceModel(
-    date: DateTime.now().add(Duration(days: 2)),
+    date: DateTime.now().add(const Duration(days: 2)),
     isPresent: true,
   ),
   AttendanceModel(
-    date: DateTime.now().add(Duration(days: 3)),
+    date: DateTime.now().add(const Duration(days: 3)),
     isPresent: true,
   )
 ];

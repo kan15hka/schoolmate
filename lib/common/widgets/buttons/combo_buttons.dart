@@ -23,19 +23,27 @@ class SComboButtons extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         if (isLeftButton)
-          buttonWidget(onTap: onButtonLeftTapped, buttonText: "Syllabus"),
+          buttonWidget(
+              onTap: onButtonLeftTapped,
+              buttonText: "Syllabus",
+              icon: Iconsax.book),
         if (isLeftButton && isRightButton)
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
         if (isRightButton)
-          buttonWidget(onTap: onButtonRightTapped, buttonText: "Performance")
+          buttonWidget(
+              onTap: onButtonRightTapped,
+              buttonText: "Performance",
+              icon: Iconsax.presention_chart)
       ],
     );
   }
 
   Expanded buttonWidget(
-      {required VoidCallback? onTap, required String buttonText}) {
+      {required VoidCallback? onTap,
+      required String buttonText,
+      required IconData icon}) {
     return Expanded(
       child: GestureDetector(
         onTap: onTap,
@@ -47,11 +55,11 @@ class SComboButtons extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Iconsax.book,
+                  icon,
                   color: buttonIconColor,
                 ),
                 if (isButtonText) ...[
-                  SizedBox(
+                  const SizedBox(
                     width: 7.5,
                   ),
                   SizedBox(

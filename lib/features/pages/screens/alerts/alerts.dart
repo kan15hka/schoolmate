@@ -6,7 +6,6 @@ import 'package:schoolmate/common/widgets/loaders/empty_box_loader.dart';
 import 'package:schoolmate/common/widgets/shimmers/message_notif_card.dart';
 import 'package:schoolmate/common/widgets/texts/section_heading.dart';
 import 'package:schoolmate/features/pages/controller/alerts_controller.dart';
-import 'package:schoolmate/features/pages/screens/alerts/widgets/alerts_card.dart';
 import 'package:schoolmate/utils/constants/sizes.dart';
 
 class AlertsPage extends StatelessWidget {
@@ -20,8 +19,8 @@ class AlertsPage extends StatelessWidget {
           child: SingleChildScrollView(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(SSizes.h10),
+            const Padding(
+              padding: EdgeInsets.all(SSizes.h10),
               child: SSectionHeading(
                 title: "Alerts",
                 isHeadline: true,

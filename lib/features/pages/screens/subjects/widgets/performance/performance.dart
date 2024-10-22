@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:schoolmate/common/widgets/graph/dotpoint_model.dart';
 import 'package:schoolmate/common/widgets/graph/graph.dart';
 import 'package:schoolmate/common/widgets/texts/section_heading.dart';
 import 'package:schoolmate/utils/constants/colors.dart';
@@ -39,14 +40,14 @@ class SPerformance extends StatelessWidget {
             children: [
               //over performance Text
               SSectionHeading(
-                title: 'Overall ${subjectName} Performance',
+                title: 'Overall $subjectName Performance',
                 isHeadline: false,
-                padding: EdgeInsets.symmetric(vertical: 15.0),
+                padding: const EdgeInsets.symmetric(vertical: 15.0),
               ),
               //Average percentage
               Container(
                 height: 50.0,
-                width: width! * 0.88,
+                width: width * 0.88,
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [
@@ -60,11 +61,9 @@ class SPerformance extends StatelessWidget {
                   children: [
                     Text(
                       'Average Percentage: ',
-                      textScaleFactor: 1.0,
                     ),
                     Text(
                       '94%',
-                      textScaleFactor: 1.0,
                       style: TextStyle(
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold,
@@ -73,14 +72,14 @@ class SPerformance extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15.0,
               ),
               //All tests
               ListView.builder(
                   itemCount: 5,
                   shrinkWrap: true,
-                  padding: EdgeInsets.only(bottom: 50.0),
+                  padding: const EdgeInsets.only(bottom: 50.0),
                   physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
                     return Container(

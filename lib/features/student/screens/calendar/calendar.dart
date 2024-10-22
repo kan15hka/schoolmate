@@ -8,7 +8,6 @@ import 'package:schoolmate/features/student/controllers/calender_controller.dart
 import 'package:schoolmate/features/student/screens/calendar/widgets/color_meaning.dart';
 import 'package:schoolmate/features/student/screens/calendar/widgets/selected_event.dart';
 import 'package:schoolmate/utils/constants/colors.dart';
-import 'package:schoolmate/utils/constants/sizes.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class CalendarScreen extends StatelessWidget {
@@ -31,19 +30,21 @@ class CalendarScreen extends StatelessWidget {
             ),
 
             //Calender
-            Obx(() {
-              if (controller.isLoading.value) {
-                return const CalenderScreenShimmer();
-              } else {
-                return Column(
-                  children: [
-                    TCurvedEdgesWidget(
-                      child: Container(
-                        decoration: BoxDecoration(color: SColors.primary),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: SSizes.defaultSpace,
-                        ),
-                        child: Column(
+            Column(
+              children: [
+                TCurvedEdgesWidget(
+                  child: Container(
+                    decoration: const BoxDecoration(color: SColors.primary),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10.0,
+                    ),
+                    child: Obx(() {
+                      if (controller.isLoading.value) {
+                        return const CalenderScreenShimmer(
+                          isSub: false,
+                        );
+                      } else {
+                        return Column(
                           children: [
                             TableCalendar(
                                 eventLoader: controller.getEventsDay,
@@ -70,23 +71,36 @@ class CalendarScreen extends StatelessWidget {
                                 calendarStyle:
                                     SCalenderStyles.getCalenderStyle(),
                                 headerStyle: SCalenderStyles.getHeaderStyle()),
-                            SizedBox(
+                            const SizedBox(
                               height: 30.0,
                             )
                           ],
-                        ),
-                      ),
-                    ),
-                    //COLOR REPRESENTAIONS
-                    const ColorMeaning(),
-                    SelectedEvents(
-                        selectedEventsList: controller.selectedDayEvents,
-                        selectedDay: controller.selectedDay.value,
-                        onEventSelected: controller.onEventSelected.value),
-                  ],
-                );
-              }
-            }),
+                        );
+                      }
+                    }),
+                  ),
+                ),
+                //COLOR REPRESENTAIONS
+                Obx(() {
+                  if (controller.isLoading.value) {
+                    return const CalenderScreenShimmer(
+                      isCalender: false,
+                    );
+                  } else {
+                    return Column(
+                      children: [
+                        const ColorMeaning(),
+                        SelectedEvents(
+                            selectedEventsList: controller.selectedDayEvents,
+                            selectedDay: controller.selectedDay.value,
+                            onEventSelected: controller.onEventSelected.value),
+                      ],
+                    );
+                  }
+                })
+              ],
+            )
+
             //SELECTED DAY EVENTS
           ],
         ),

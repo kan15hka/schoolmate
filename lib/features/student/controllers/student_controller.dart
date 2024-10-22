@@ -25,7 +25,6 @@ class StudentController extends GetxController {
 
       isLoading.value = false;
     } catch (e) {
-      print(e);
       student(StudentModel.empty());
       TLoaders.errorSnackBar(
           title: "Oh Snap!", message: "Someting went wrong. Please try again");

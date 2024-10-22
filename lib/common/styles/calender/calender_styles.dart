@@ -47,11 +47,11 @@ class SCalenderStyles {
           TextStyle(color: isPrimary ? SColors.primaryDark : Colors.white),
       selectedDecoration:
           BoxDecoration(color: selectedColor, shape: BoxShape.circle),
-      holidayDecoration: BoxDecoration(
+      holidayDecoration: const BoxDecoration(
           border: Border.fromBorderSide(
               BorderSide(color: SColors.primaryDark, width: 1.4)),
           shape: BoxShape.circle),
-      todayDecoration: BoxDecoration(
+      todayDecoration: const BoxDecoration(
         color: SColors.primaryDark,
         shape: BoxShape.circle,
       ),

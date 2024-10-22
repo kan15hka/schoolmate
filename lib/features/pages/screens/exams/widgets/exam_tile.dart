@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:schoolmate/common/widgets/buttons/combo_buttons.dart';
 import 'package:schoolmate/utils/constants/colors.dart';
 import 'package:schoolmate/utils/device/device_utility.dart';
@@ -81,7 +80,7 @@ class ExamTile extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10.0,
           ),
           SComboButtons(

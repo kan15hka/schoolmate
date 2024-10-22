@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:schoolmate/common/widgets/texts/section_heading.dart';
-import 'package:schoolmate/utils/constants/colors.dart';
 import 'package:schoolmate/utils/constants/sizes.dart';
 
 class SSyllabus extends StatelessWidget {
@@ -8,7 +7,7 @@ class SSyllabus extends StatelessWidget {
   final String name;
   @override
   Widget build(BuildContext context) {
-    final syllabus =
+    const syllabus =
         "Calculus: Limits, derivatives, and integrals\nAlgebra: Polynomial equations, matrices, and determinants.\nGeometry: Analytical geometry, vectors, and three-dimensional geometry.\nProbability and Statistics: Probability distributions, hypothesis testing, and data analysis.\nTrigonometry: Trigonometric functions, identities, and applications in solving triangles.";
     return Scaffold(
       backgroundColor: Colors.white,

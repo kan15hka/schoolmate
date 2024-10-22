@@ -17,7 +17,7 @@ class TimeTableBuilder extends StatelessWidget {
       children: [
         Expanded(
           child: ListView.builder(
-              padding: EdgeInsets.symmetric(vertical: 25.0),
+              padding: const EdgeInsets.symmetric(vertical: 25.0),
               physics: const BouncingScrollPhysics(),
               itemCount: dayTimetableList.periodsList.length,
               itemBuilder: (context, index) {

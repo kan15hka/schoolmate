@@ -26,7 +26,6 @@ class ExamSubjectCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final colorIndex =
         SHelperFunctions.getColorIndex(index, SColors.listColors.length);
-    final primaryColor = SColors.listColors[colorIndex]["primary"];
     final secondaryColor = SColors.listColors[colorIndex]["secondary"];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

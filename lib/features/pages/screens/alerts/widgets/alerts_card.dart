@@ -37,7 +37,7 @@ class AlertsCard extends StatelessWidget {
         ],
 
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
+          margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(15.0),

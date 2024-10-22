@@ -4,7 +4,6 @@ import 'package:schoolmate/common/styles/calender/calender_styles.dart';
 import 'package:schoolmate/common/widgets/shimmers/calender_screen_shimmer.dart';
 import 'package:schoolmate/common/widgets/texts/section_heading.dart';
 import 'package:schoolmate/features/pages/controller/attendance_controller.dart';
-import 'package:schoolmate/features/pages/models/attendance_model.dart';
 import 'package:schoolmate/features/pages/screens/attendance/pie_information.dart';
 import 'package:schoolmate/utils/constants/colors.dart';
 import 'package:schoolmate/utils/constants/sizes.dart';
@@ -22,8 +21,8 @@ class AttendancePage extends StatelessWidget {
           child: SingleChildScrollView(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(SSizes.h10),
+            const Padding(
+              padding: EdgeInsets.all(SSizes.h10),
               child: SSectionHeading(
                 title: "Attendance",
                 isHeadline: true,

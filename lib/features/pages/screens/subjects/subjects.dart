@@ -1,8 +1,5 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:schoolmate/common/widgets/texts/section_heading.dart';
 import 'package:schoolmate/features/pages/controller/subjects_controller.dart';
 import 'package:schoolmate/features/pages/screens/subjects/widgets/performance/subject_performance.dart';
@@ -23,8 +20,8 @@ class SubjetcsPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(SSizes.h10),
+              const Padding(
+                padding: EdgeInsets.all(SSizes.h10),
                 child: SSectionHeading(
                   title: "Subjects",
                   isHeadline: true,

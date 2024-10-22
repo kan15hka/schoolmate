@@ -30,7 +30,7 @@ class SSectionHeading extends StatelessWidget {
             borderColor: Colors.transparent,
             icon: UniconsLine.arrow_left,
           ),
-        SizedBox(
+        const SizedBox(
           width: 10.0,
         ),
         Padding(

@@ -8,7 +8,7 @@ class ExamModel {
 
   //To Json Function
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['examTitle'] = examTitle;
     List<Map<String, dynamic>> jsonEventsList = [];
     for (ExamSubjectsModel element in examsList) {
@@ -35,7 +35,7 @@ class ExamSubjectsModel {
     required this.subjectTeacher,
   });
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
+    final Map<String, dynamic> data = <String, dynamic>{};
     data['subjectName'] = subjectName;
     data['examDateTime'] = examDateTime;
     data['syllabus'] = syllabus;

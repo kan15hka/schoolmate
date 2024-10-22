@@ -1,6 +1,4 @@
 import 'package:get/get.dart';
-import 'package:schoolmate/features/student/controllers/student_controller.dart';
-import 'package:schoolmate/features/student/model/student_model.dart';
 import 'package:schoolmate/features/student/model/teacher_model.dart';
 import 'package:schoolmate/utils/http/http_client.dart';
 
